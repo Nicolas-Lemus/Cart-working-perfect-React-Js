@@ -9,26 +9,27 @@ const Item = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  const { itemId } = useParams();
+  const {itemId} = useParams();
 
   useEffect(() => {
     const db = getFirestore();
 
-    const productCollection = doc(db, "products", itemId);
-    getDoc(productCollection)
+    const tecnologiaCollection = doc(db, "tecnologia", itemId);
+
+    getDoc(tecnologiaCollection)
       .then((snapshot) => {
         setProductsData([{ id: snapshot.id, ...snapshot.data()}]);
       })
-      .catch((error) => setError(true))
+      .catch(() => setError(true))
       .then(() => setLoading(false));
   }, [itemId]);
-
 
   return loading ? (
       <DotSpinner/>
       ):error ? (
         <div>Algo salio mal</div>
-      ):( <div>
+      ):( 
+      <div>
         <ItemDetailContainer productsData={productsData} />;
       </div>
   )

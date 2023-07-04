@@ -9,9 +9,11 @@ const Products = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
+
     const db = getFirestore();
-    const productCollection = collection(db, "products");
-    getDocs(productCollection)
+    const tecnologiaCollection = collection(db, "tecnologia");
+    getDocs(tecnologiaCollection)
+    
       .then((snapshot) => {
         setProductsData(
           snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }))

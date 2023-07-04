@@ -1,6 +1,6 @@
 import React from "react";
 import "./CartDetailCard.css"
-const CartDetailCard = ({ product, qty }) => {
+const CartDetailCard = ({ product, quantity}) => {
 
   return (
         <div>
@@ -9,7 +9,7 @@ const CartDetailCard = ({ product, qty }) => {
           </div>
           <div>
             <h2>{product.title}</h2>
-            <p>Cantidad: {qty.qty}</p>
+            <p>Cantidad: {quantity.quantity}</p>
           </div>
         </div>
   );

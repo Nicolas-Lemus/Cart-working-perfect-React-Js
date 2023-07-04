@@ -8,19 +8,19 @@ import DotSpinner from "../animations/DotSpinner ";
 
 const fetchProductsByIds = async (ids) => {
   const db = getFirestore();
-  const productRefs = ids.map((id) => doc(collection(db, "products"), id));
-  const productSnapshots = await Promise.all(
-    productRefs.map((productRef) => getDoc(productRef))
+  const tecnologiaRefs = ids.map((id) => doc(collection(db, "tecnologia"), id));
+  const tecnologiaSnapshots = await Promise.all(
+    tecnologiaRefs.map((tecnologiaRef) => getDoc(tecnologiaRef))
   );
 
-  const products = productSnapshots.map((productSnapshot) => {
-    if (productSnapshot.exists()) {
-      return { id: productSnapshot.id, ...productSnapshot.data() };
+  const tecnologia = tecnologiaSnapshots.map((tecnologiaSnapshot) => {
+    if (tecnologiaSnapshot.exists()) {
+      return { id: tecnologiaSnapshot.id, ...tecnologiaSnapshot.data() };
     } else {
       return null;
     }
   });
-  return products.filter((product) => product !== null);
+  return tecnologia.filter((product) => product !== null);
 };
 
 const Cart = () => {
@@ -30,12 +30,12 @@ const Cart = () => {
   const { count } = useContext(CartContext);
 
   React.useEffect(() => {
-    const ids = count.products.map((product) => product.productId);
+    const ids = count.tecnologia.map((product) => product.productId);
     fetchProductsByIds(ids)
       .then((res) => {
         setProductsData(res);
       })
-      .catch((err) => setError(err))
+      .catch((res) => setError(res))
       .then(() => setLoading(false));
   }, [count]);
 
@@ -51,7 +51,7 @@ const Cart = () => {
           <CartDetailCard
             key={product.id}
             product={product}
-            qty={count.products.find((item) => item.productId === product.id)}
+            quantity={count.tecnologia.find((item) => item.productId === product.id)}
           />
         ))}
       </div>

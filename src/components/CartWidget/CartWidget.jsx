@@ -6,13 +6,12 @@ import { Link } from "react-router-dom";
 
 const CartWidget = () => {
 
-  const [qty, setQty] = useState(0);
-
-  const { count } = useContext(CartContext);
+  const [quantity,setQuantity] = useState(0);
+  const {count} = useContext(CartContext);
 
   useEffect(() => {
     
-    setQty(count.products.reduce((total, product) => total + product.qty, 0));
+    setQuantity(count.tecnologia.reduce((total, product) => total + product.quantity, 0));
   }, [count]);
   return (
     <div
@@ -33,7 +32,7 @@ const CartWidget = () => {
         }}
       >
         <FontAwesomeIcon icon={faCartShopping} />
-        <span>{qty}</span>
+        <span>{quantity}</span>
       </Link>
     </div>
   );

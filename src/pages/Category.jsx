@@ -14,8 +14,8 @@ const Category = () => {
   useEffect(() => {
     const db = getFirestore();
 
-    const productCollection = collection(db, "products");
-    getDocs(productCollection)
+    const tecnologiaCollection = collection(db, "tecnologia");
+    getDocs(tecnologiaCollection)
       .then((snapshot) => {
         
         const productsFilter = snapshot.docs.map((doc) => ({
@@ -27,7 +27,7 @@ const Category = () => {
           productsFilter.filter((products) => products.category === categoryId)
         );
       })
-      .catch((error) => setError(true))
+      .catch(() => setError(true))
       .then(() => setLoading(false));
   }, [categoryId]);
 
