@@ -1,0 +1,65 @@
+.footerImportant{
+    background: rgb(103, 136, 93);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 8rem;
+}
+.footer{
+    display: flex;
+}
+.logoFooter img{
+    width: 80px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.footerList{
+    width: 100%;
+    padding: auto;
+}
+.footerList h2{
+    margin-left: 2rem;
+    padding-top: 1rem;
+    font-size: 2.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;;
+}
+.footerListItems{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 3rem;
+}
+.footerListItems h3{
+    font-size: 1.7rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.footerListItems ul li{
+    font-size: 1rem;
+    list-style:none;
+    padding-top: .1rem;
+    padding-left: 1rem;
+}
+.footerContact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footerContact h3{
+    font-size: 1rem;
+    padding: 1rem 1rem 0 1rem;
+}
+.footerContact img{
+    width: 40px;
+    margin: 0 2rem;
+    cursor: pointer;
+}
+.footerFoot{
+    text-align: center;
+    padding-bottom: .3rem;
+}
+.footerFoot h4{
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footerFoot h5{
+    font-size: .8rem;
+    font-weight: 700;
+}

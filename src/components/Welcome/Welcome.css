@@ -1,0 +1,12 @@
+.welcome{
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+}
+.welcome h2{
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+.welcome p{
+    padding: 0 5rem ;
+    font-size: 1.8rem;
+}

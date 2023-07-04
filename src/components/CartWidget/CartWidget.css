@@ -1,0 +1,17 @@
+.cart{
+    align-items: center;
+    cursor: pointer;
+    margin: auto;
+    margin: 1rem;
+}
+.cart span{
+    margin:1rem;
+    font-size: 25px;
+}
+.icon{
+    font-size: 25px;
+}.icon:hover{
+    color: #5b5858;
+    scale: 1.1;
+    transition: 0.5s;
+}

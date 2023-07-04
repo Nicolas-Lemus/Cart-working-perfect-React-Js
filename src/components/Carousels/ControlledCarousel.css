@@ -1,0 +1,16 @@
+.w-100{
+    height: 500px;
+    object-fit: contain;
+    background: rgb(255, 255, 255);
+}
+.carousel-caption h3{
+    color: rgb(21, 20, 20);
+    font-size: 3rem;
+    font-weight: 400;
+    font-family:fantasy;
+    background: rgba(255, 255, 255, 0.552);
+    text-align: center;
+}
+.carousel-indicators [data-bs-target]{
+background:rgb(0, 0, 0);
+}

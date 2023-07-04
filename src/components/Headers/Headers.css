@@ -1,0 +1,10 @@
+.Header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(103, 136, 93);
+    font-size: 6rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(214, 243, 219);
+}

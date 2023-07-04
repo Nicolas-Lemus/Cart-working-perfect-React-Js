@@ -1,0 +1,39 @@
+.w-25{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d-flex{
+    display: flex;
+    flex-direction: column;
+}
+.spamPrecio{
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.rounded-0{
+    background: rgba(92, 161, 113, 0.677);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 1.6rem;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.rounded-0:hover{
+    background: rgb(59, 130, 57);
+}
+
+.ml-2{
+    background: green;
+    border:rgb(255, 255, 255);
+    color: white;
+}
+.ml-2:hover{
+    background: rgba(75, 174, 21, 0.826);
+    color: rgb(0, 0, 0);
+    border-color: none !important;
+}
