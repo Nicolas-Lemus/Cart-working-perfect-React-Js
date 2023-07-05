@@ -2,7 +2,7 @@ import React from "react";
 import ProductCard from "../ProductCard/ProductCard";
 const ItemListContainer = ({ productsData }) => {
   return (
-    <div>
+    <div className="divPadre">
       {productsData.map((product) => {
         return <ProductCard key={product.id} productData={product} />;
       })}

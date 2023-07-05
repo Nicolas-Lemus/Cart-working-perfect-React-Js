@@ -1,0 +1,17 @@
+.cardDescription{
+    width: 80%;
+    margin: 0 auto;
+}
+.Images{
+    margin: 0 auto;
+}
+.Title{
+    text-align: center;
+}
+.Description{
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+.Price{
+    text-align: center;
+}

@@ -45,8 +45,8 @@ const Cart = () => {
     <div>Algo salio mal</div>
   ):(
     <div>
-      <Headers HeadersH1="ShoppingCart"/>
-      <div>
+      <Headers HeadersH1="Carrito🛒"/>
+      <div className="shoppingCart">
         {productsData.map((product) => (
           <CartDetailCard
             key={product.id}
@@ -56,6 +56,7 @@ const Cart = () => {
         ))}
       </div>
     </div>
+    
   );
 };
 

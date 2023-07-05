@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 import  DotSpinner  from "../animations/DotSpinner ";
+import Headers from "../components/Headers/Headers";
 
 const Products = () => {
   const [productsData, setProductsData] = useState([]);
@@ -31,6 +32,7 @@ const Products = () => {
         <div>Algo salio mal</div>
     ):(
         <div>
+            <Headers HeadersH1="Productos"/>
             <ItemListContainer productsData={productsData}/>
         </div>
     )}

@@ -53,3 +53,8 @@
     padding: 1rem;
     font-size: 1.1rem;
 }
+.NavBar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}

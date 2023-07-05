@@ -3,6 +3,7 @@ import ItemListContainer from "../components/ItemListContainer/ItemListContainer
 import { useParams } from "react-router-dom";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 import DotSpinner from "../animations/DotSpinner ";
+import Headers from "../components/Headers/Headers";
 
 const Category = () => {
   const [productsData, setProductsData] = useState([]);
@@ -37,6 +38,7 @@ const Category = () => {
       <div>Algo salio mal</div>
     ) : (
     <div>
+      <Headers HeadersH1 ="Categorias"/>
       <ItemListContainer productsData={productsData} />;
     </div>
   )

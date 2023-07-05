@@ -1,0 +1,10 @@
+.shoppingCart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.qty{
+    font-size: 1.3rem;
+    text-align: center;
+}

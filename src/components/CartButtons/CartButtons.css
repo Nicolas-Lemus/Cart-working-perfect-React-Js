@@ -1,5 +1,4 @@
 .w-25{
-    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,9 +30,17 @@
     background: green;
     border:rgb(255, 255, 255);
     color: white;
+    margin: 1rem;
 }
 .ml-2:hover{
     background: rgba(75, 174, 21, 0.826);
     color: rgb(0, 0, 0);
     border-color: none !important;
 }
+.quantity{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+

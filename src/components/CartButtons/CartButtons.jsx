@@ -12,7 +12,9 @@ const CartButtons = ({productId}) => {
   };
 
   const handleClickRes = () => {
-    setState(state - 1);
+    if (state * 1 !== 1) {
+      setState(state - 1);
+    }
   };
 
   const addToCart = () => { 
@@ -35,8 +37,8 @@ const CartButtons = ({productId}) => {
   };
 
   return (
-    <div>
-      <div>
+    <div className="quantity">
+      <div className="w-25">
         <Button
           variant="outline-secondary"
           className="rounded-0"
@@ -44,7 +46,7 @@ const CartButtons = ({productId}) => {
         >
           -
         </Button>
-        <span>{state}</span>
+        <span className="spamPrecio">{state}</span>
         <Button
           variant="outline-secondary"
           className="rounded-0"
@@ -55,6 +57,7 @@ const CartButtons = ({productId}) => {
       </div>
       <Button
         className="ml-2"
+        variant="primary"
         onClick={addToCart}
       >
         Agregar al Carrito

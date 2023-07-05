@@ -1,4 +1,4 @@
-/* .TitleProducts{
+.TitleProducts{
     font-size: 6rem;
     text-align: center;
     color: rgb(181, 207, 176);
@@ -42,25 +42,20 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .Description{
-    margin-top: 7rem;
-    font-size: 1.5rem;
+    text-decoration: none;
     text-align: center;
     padding:2rem 4rem;
     background: white;
     border-radius: 30px;
-    width: 50%;
-    height: 100%;
-}
-.Description h2{
-    
     padding-bottom: 4rem;
     font-size: 3rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .Previous{
     text-decoration:line-through;
     font-family:sans-serif;
-    margin-top: 2rem;
+    
 }
 .Price{
     font-size: 1.6rem;
@@ -80,6 +75,11 @@
     border-color: rgb(213, 204, 204);
 }
 .Stock{
-    padding-top:2rem;
     text-decoration:underline;
-} */
+    text-align: center;
+}
+.Detail{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+}

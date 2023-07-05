@@ -1,10 +1,13 @@
 import React from "react";
-import ProductDescription from "../CardDescription/CardDescription";
+import CardDescription from "../CardDescription/CardDescription";
+import Headers from "../Headers/Headers";
+
 const ItemDetailContainer = ({ productsData }) => {
   return (
     <div>
+      <Headers HeadersH1 ="Descripcion"/>
       {productsData.map((product) => {
-        return <ProductDescription key={product.id} productData={product}/>;
+        return <CardDescription key={product.id} productData={product}/>;
       })}
     </div>
   );
